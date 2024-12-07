@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SaigonTourist</title>
+    <link rel="stylesheet" href="css/baitap1205.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <img src="images/img/banner-04.webp" alt="" class="img-100">
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <a href="index.html">trang chu</a>
+                <a href="#">gioi thieu</a>
+                <a href="#">tour du lich</a>
+                <a href="#">khuyen mai</a>
+                <a href="lienhe.html">lien he</a>
+            </div>
+        </div>
+    </div>
+    <!-- xong phan header -->
+    	<main>
+    <style>
+        /* Container chính */
+        .container {
+            display: flex; /* Sử dụng Flexbox */
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto; /* Căn giữa trang */
+            gap: 20px; /* Khoảng cách giữa sidebar và content */
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1; /* Chiếm 1 phần */
+            max-width: 30%; /* Sidebar chiếm tối đa 30% chiều rộng */
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sidebar input, .sidebar textarea, .sidebar button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .sidebar button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Content */
+        .content {
+            flex: 2; /* Chiếm 2 phần */
+            max-width: 70%; /* Content chiếm tối đa 70% chiều rộng */
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content .location {
+            margin-bottom: 20px;
+        }
+
+        .content iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .content h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+    <div class="container">
+        <!-- Sidebar -->
+		<h2>Liên hệ</h2> <br>
+        <div class="sidebar">
+            
+            <form>
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="tel" placeholder="Điện thoại" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Địa chỉ" required>
+                <textarea rows="4" placeholder="Nội dung" required></textarea>
+                <button type="submit">Gửi Thông Tin</button>
+            </form>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.459868059937!2d106.69013221533427!3d10.776885962120607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175298dd44ffafb%3A0xd6789dbf0d0dc61a!2s214%20Nguy%E1%BB%85n%20%C4%90%C3%ACnh%20Chi%E1%BB%83u%2C%20Qu%E1%BA%ADn%203%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam!5e0!3m2!1sen!2s!4v1668689969396!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                <h3>Văn phòng chính</h3>
+                <p><strong>Địa chỉ:</strong> 214 Nguyễn Đình Chiểu, Q.3, Hồ Chí Minh</p>
+                <p><strong>Tel:</strong> 0903-123456</p>
+            </div>
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.549688099188!2d106.65051411533416!3d10.762988962282985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175298d42e49cd7%3A0x9c32032e9f4a6466!2s6%20T%C3%A2n%20K%E1%BB%B3%20T%C3%A2n%20Qu%C3%BD%2C%20T%C3%A2n%20B%C3%ACnh%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam!5e0!3m2!1sen!2s!4v1668689969396!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                <h3>Chi nhánh 1</h3>
+                <p><strong>Địa chỉ:</strong> 6 Tân Kỳ Tân Quý, Q.Tân Bình, Tp.Hồ Chí Minh</p>
+                <p><strong>Tel:</strong> 0903-123456</p>
+                <p><strong>Email:</strong> info@saigontourist.com</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div> <!-- Phần footer được load động -->
+
+    </main>
+<footer> <p><b>Bản quyền của công ty du lịch SaigonTourist</b></p></footer>
+</body>	
+	</html>
+
